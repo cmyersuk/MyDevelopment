@@ -9,6 +9,24 @@
 <body>
     <div class="container">
         <div class="name-box">chris myers</div>
+        <div class="content-section">
+            <button class="browse-button">Browse Files</button>
+            <input 
+                id="txt-file-input" 
+                type="file" 
+                accept=".txt" 
+                style="display: none;"
+            >
+        </div>
     </div>
+    <div id="file-panel" class="file-panel" style="display: none;">
+        <div class="file-panel-header">
+            <h2 id="file-name"></h2>
+        </div>
+        <div class="file-panel-content">
+            <pre id="file-content"></pre>
+        </div>
+    </div>
+    <script src="js/file-viewer.js"></script>
 </body>
 </html>
